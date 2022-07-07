@@ -17,7 +17,7 @@ metadata:
 spec:
   interval: 1m
   approvePlan: "auto"
-  path: ./
+  path: ./eks
   sourceRef:
     kind: GitRepository
     name: arc-sparks
