@@ -18,6 +18,9 @@ spec:
   interval: 1m
   approvePlan: "auto"
   path: ./eks
+  cliConfigSecretRef:
+    name: aws-credentials
+    namespace: flux-system
   sourceRef:
     kind: GitRepository
     name: arc-sparks
