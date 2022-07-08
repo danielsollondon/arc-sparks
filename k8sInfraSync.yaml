@@ -4,7 +4,7 @@ metadata:
   name: arc-sparks
   namespace: flux-system
 spec:
-  interval: 30s
+  interval: 10s
   url: https://github.com/danielsollondon/arc-sparks
   ref:
     branch: main
