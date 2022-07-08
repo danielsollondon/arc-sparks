@@ -22,7 +22,7 @@ spec:
     kind: GitRepository
     name: arc-sparks
     namespace: flux-system
-  env:
+  envFrom:
       - name: access_key
         valueFrom:
           secretKeyRef:
