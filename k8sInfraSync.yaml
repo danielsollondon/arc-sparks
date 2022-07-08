@@ -22,16 +22,9 @@ spec:
     kind: GitRepository
     name: arc-sparks
     namespace: flux-system
-  envFrom:
-      - name: access_key
-        valueFrom:
-          secretKeyRef:
-            name: aws-credentials
-            key: access_key
-            optional: false 
-      - name: secret_key
-        valueFrom:
-          secretKeyRef:
-            name: aws-credentials
-            key: secret_key
-            optional: false
+  vars:
+  - name: cluster_name
+    value: karpenter
+    varsFrom:
+      kind: Secret
+      name: aws-credentials
