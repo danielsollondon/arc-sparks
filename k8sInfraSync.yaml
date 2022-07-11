@@ -22,8 +22,9 @@ spec:
     kind: GitRepository
     name: arc-sparks
     namespace: flux-system
-  cliConfigSecretRef:
+  varsFrom:
+  - kind: Secret
     name: aws-credentials
-    namespace: flux-system
+
 
 
