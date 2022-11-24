@@ -18,6 +18,7 @@ spec:
   interval: 30s
   approvePlan: "auto"
   disableDriftDetection: true
+  destroyResourcesOnDeletion: true
   path: ./eks
   sourceRef:
     kind: GitRepository
